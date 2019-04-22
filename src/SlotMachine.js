@@ -88,7 +88,7 @@ class SlotMachine extends Component {
     });
     this.say(isAuto ? 'Started automatically!' : 'Spinning...');
     // 5. If the user doesn’t press stop, the machine stops automatically after 10 seconds (after starting)
-    this.timers.autoStop = setTimeout(() => this.stop(TextTrackCue), 10000);
+    this.timers.autoStop = setTimeout(() => this.stop(), 10000);
   }
 
   stop(isAuto = false) {
